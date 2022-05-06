@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* end font */
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+/* setting start */
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*  setting end*/
+.nameDev {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+}
+
+nav ul li {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+li a {
+    font-family: 'Harmattan', sans-serif;
+    color: #4e4e4e;
+    position: relative;
+    padding-bottom: 2px;
+    font-size: 1.2rem;
+}
+
+li a::before {
+    content: '';
+    position: absolute;
+    width: 55%;
+    height: 2px;
+    left: 15px;
+    bottom: 0;
+    background-color: #0d6ffd;
+    transform: scaleX(0);
+    transition: 0.4s;
+}
+
+li a:hover::before {
+    transform: scaleX(1);
+}
+
+/*  */
+.container.header {
+    margin-top: 165px;
+}
+
+.skil {
+    margin-bottom: 50px;
+}
+
+/*  */
+.myName {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.8rem;
+}
+
+
+a.tombolContact {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/*  */
+.myPhoto {
+    width: 400px;
+    aspect-ratio: 1/1;
+    margin-left: 150px;
+    margin-top: -30px;
+}
+
+/*  */
+a.mediasocial {
+    color: rgb(32, 32, 32);
+    margin: 0 9px;
+}
+
+/*  */
+.konten {
+    width: 100%;
+    height: 7px;
+    border: 1px solid #b6b6b6;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.isian {
+    background: #0d6ffd;
+    height: 5px;
+}
+
+.gambar2 {
+    width: 210px;
+    aspect-ratio: 1/1;
+}
+
+h5 {
+    color: #0d6ffd;
+}
+
+.div1,
+.div2,
+.div3 {
+    line-height: 10px;
+}
+
+.div1,
+.div2 {
+    padding-bottom: 20px;
+}
+
+/* form */
+
+
+/* end form */
+/*  */
+.link-foot {
+    margin-left: 11px;
+}
+
+.paragraf {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* responsive */
+@media screen and (max-width:768px) {
+    .bagianAtas {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    body {
+        background: #fff;
+    }
+
+    .gambar2 {
+        width: 135px;
+        aspect-ratio: 1/1;
+    }
+
+    /*  */
+    li a:hover::before {
+        transform: translate(100000px);
+    }
+
+    /*  */
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    /*  */
+    .myPhoto {
+        width: 250px;
+        aspect-ratio: 1/1;
+
+        margin: -50px auto 0;
+    }
+
+    /*  */
+    .myName {
+
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    /*  */
+
+    .tombolContact {
+        display: block;
+        margin: auto;
+    }
+
+    .icon {
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .ini {
+        display: none;
+    }
+
+    .tentangSaya {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+}
